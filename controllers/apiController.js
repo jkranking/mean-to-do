@@ -37,7 +37,8 @@ module.exports = function(app) {
 		}
 
 		else {
-		   
+		  
+		  console.log(req.body.todo)
 			var newTodo = Todos({
 				username: 'test',
 				todo: req.body.todo,
